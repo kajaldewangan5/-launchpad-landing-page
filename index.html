@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchPad | Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Launch<span>Pad</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="btn btn-small">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1>Build faster. <br /><span>Launch smarter.</span></h1>
+        <p>LaunchPad helps your team plan, build and ship products in half the time.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">Get Started</a>
+          <a href="#features" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="feature-grid">
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>Optimized performance so your users never wait.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🔒</div>
+            <h3>Secure</h3>
+            <p>Industry-standard security to keep your data safe.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📱</div>
+            <h3>Responsive</h3>
+            <p>Looks perfect on mobile, tablet and desktop.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is there a free trial? <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer"><p>Yes, you get a 14-day free trial with no credit card required.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I cancel anytime? <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer"><p>Absolutely. You can cancel your plan at any time from your dashboard.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you offer support? <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer"><p>Our support team is available 24/7 through chat and email.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <form id="contactForm" class="form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="10 digit number" maxlength="10" />
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
+            <small class="error-msg"></small>
+          </div>
+
+          <button type="submit" class="btn" id="submitBtn">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 LaunchPad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
