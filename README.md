@@ -1,1 +1,1 @@
-# -launchpad-landing-page
+# launchpad-landing-page
